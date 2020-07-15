@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="danmu.css">
+    <script src="jquery-3.4.1/jquery-3.4.1.min.js"></script>
+    <script src="danmu.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.send').click(function(){
+                $.bulletScreen.send($('#bullet-text').val(),$('.container'));
+                $('#bullet-text').val("");
+            });
+            $('.close').click(function(){
+                $.bulletScreen.clear($('.container'));
+            });
+            $('#bullet-text').keyup(function(e){
+                if(e.keyCode==13){
+                    $.bulletScreen.send($('#bullet-text').val(),$('.container'));
+                    $('#bullet-text').val("");
+                }
+            });
+        });
+    </script>
+    <title>Document</title>
+</head>
+<body>
+    <body>
+        <div class="container">
+     
+        </div>
+        <div class="menu-bar">
+            <input type="text" placeholder="弹幕内容" id="bullet-text"/>
+            <span class="btn send">发送弹幕</span>
+            <span class="btn close">清空弹幕</span>
+        </div>
+    </body>
+</body>
+</html>

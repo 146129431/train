@@ -1,0 +1,26 @@
+.container{
+    width: 1000px;
+    margin: 80px auto;
+    margin-bottom: 0px;
+    background: black;
+    height: 500px;
+    border-radius: 5px;
+    border: 1px solid salmon;
+    position: relative;
+    overflow: hidden;
+}
+.menu-bar{
+    width: 1000px;
+    margin: 0px auto;
+    text-align: center;
+}
+.btn{
+    padding: 5px 20px;
+    display: inline-block;
+    border-radius: 3px;
+    border: 1px solid #e0e0e0;
+    margin: 15px;
+    background: salmon;
+    color: #fff;
+    cursor: pointer;
+}
