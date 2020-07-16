@@ -35,3 +35,8 @@ $(document).ready(function () {
     });
 
 });
+$('.btn-group button-padding').click(function (){
+    var label = $(this).children()[1];
+    console.log(label.innerText);
+    _czc.push(["_trackEvent",'英雄页面','点击',label.innerText,1]);
+})
