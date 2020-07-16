@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>新闻</title>
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="icon" href="./images/wy.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./style/base.css">
+</head>
+
+<body>
+    <div class="container-fluid ">
+        <header style="background-color: salmon;">
+            <div class="row">
+                <div class="content">
+                    <div class="header-title">
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                        <img src="./images/shoubiao.png" alt="logo" class="icon">
+                        <span>
+                            <h5 class="text-white">&nbsp;一拳超人</h5>
+                        </span>
+                    </div>
+                    <nav class="navbar navbar-expand-sm navbar-dark " style="background-color: salmon;">
+                        <a class="navbar-brand" href="#"></a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#collapsibleNavbar">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                            <ul class="navbar-nav justify-content-center">
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="./index.html">首页</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./news.html">新闻</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./about.html">关于我们</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <section>
+            <div class="col-12">
+                <div id="demo" class="carousel slide" data-ride="carousel">
+
+                    <!-- 指示符 -->
+                    <ul class="carousel-indicators">
+                        <li data-target="#demo" data-slide-to="0" class="active"></li>
+                        <li data-target="#demo" data-slide-to="1"></li>
+                        <li data-target="#demo" data-slide-to="2"></li>
+                    </ul>
+
+                    <!-- 轮播图片 -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./images/1.jpeg">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./images/2.png">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./images/3.png">
+                        </div>
+                    </div>
+
+                    <!-- 左右切换按钮 -->
+                    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#demo" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
+
+                </div>
+            </div>
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col-12">
+                        <h2>英雄列表</h2>
+                        <hr>
+                        <table id="introduce" class="table table-border">
+                            <tr>
+                                <th>英雄照片</th>
+                                <th>英雄名称</th>
+                                <th>英雄排名</th>
+                                <th>了解更多</th>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <div class="btn-group button-padding" id="pagination">
+                            <button type="button" class="btn btn-warning">1</button>&nbsp;
+                            <button type="button" class="btn btn-warning">2</button>&nbsp;
+                            <button type="button" class="btn btn-warning">3</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br><br><br>
+        </section>
+        <footer style="background-color: salmon;">
+            <div class="row">
+                <div class="content">
+                    <div class="col-4">
+                        <img src="./images/icon_GPS.png" alt="dd" class="footer-img">
+                        <h5 class="text-white font-weight-light">地理位置</h5>
+                    </div>
+                    <div class="col-4">
+                        <img src="./images/icon_dmail.png" alt="yj" class="footer-img">
+                        <h5 class="text-white font-weight-light">邮件</h5>
+                    </div>
+                    <div class="col-4">
+                        <img src="./images/icon_patriarch.png" alt="kf" class="footer-img">
+                        <h5 class="text-white font-weight-light">联系方式</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <hr style="text-align: center;border: white solid thin;width: 20%">
+                <div class="col-12 text-center text-white">
+                    版权所有 &copy; 王鹏辉
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/axios/0.19.2/axios.min.js"></script>
+    <script src="./js/news.js">
+    </script>
+</body>
+
+</html>

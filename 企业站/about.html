@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>关于我们</title>
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="icon" href="./images/wy.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./style/base.css">
+    <script type="text/javascript" src="https://api.map.baidu.com/api?v=2.0&ak=LQmvwYIjMy3lS4SrYcqG24TCDFNzjG9s&s=1"></script>
+</head>
+
+<body>
+    <div class="container-fluid ">
+        <header style="background-color: salmon;">
+            <div class="row">
+                <div class="content">
+                    <div class="header-title">
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                        <img src="./images/shoubiao.png" alt="logo" class="icon">
+                        <span>
+                            <h5 class="text-white">&nbsp;一拳超人</h5>
+                        </span>
+                    </div>
+                    <nav class="navbar navbar-expand-sm navbar-dark " style="background-color: salmon;">
+                        <a class="navbar-brand" href="#"></a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#collapsibleNavbar">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                            <ul class="navbar-nav justify-content-center">
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="./index.html">首页</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./news.html">新闻</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./about.html">关于我们</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <section>
+            <div class="col-12">
+                <div id="demo" class="carousel slide" data-ride="carousel">
+
+                    <!-- 指示符 -->
+                    <ul class="carousel-indicators">
+                        <li data-target="#demo" data-slide-to="0" class="active"></li>
+                        <li data-target="#demo" data-slide-to="1"></li>
+                        <li data-target="#demo" data-slide-to="2"></li>
+                    </ul>
+
+                    <!-- 轮播图片 -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./images/1.jpeg">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./images/2.png">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./images/3.png">
+                        </div>
+                    </div>
+
+                    <!-- 左右切换按钮 -->
+                    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#demo" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 text-center">
+                    <hr>
+                    <h2>英雄协会</h2>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-8">
+                        <div class="map" id="dituContent"></div>
+                    </div>
+                    <div class="col-4">
+                        <p>
+                            英雄协会是在与埼bai玉交集前3年，由大富翁阿尔格尼创立，契机是埼玉救下的那个双下巴小男孩是阿尔格尼的孙子，阿尔格尼为了感念救了自己的孙子的英雄而设立，之后靠大众募集资金运营的组织。
+                            隶属于组织的英雄根据其贡献获取相应的酬劳。英雄资格的认定主要通过笔试和体能测试进行。笔试50分，体能测试50分，合计满分100分。70分以上可以获得英雄执照。
+                        </p>
+                        <div class="message">
+                            <span><h5>地址：福州市大学城溪源宫路200号</h5></span>
+                            <span><h5>联系方式：2135235324</h5></span>
+                            <span><h5>负责人：王鹏辉</h5></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+        </section>
+        <footer style="background-color: salmon;">
+            <div class="row">
+                <div class="content">
+                    <div class="col-4">
+                        <img src="./images/icon_GPS.png" alt="dd" class="footer-img">
+                        <h5 class="text-white font-weight-light">地理位置</h5>
+                    </div>
+                    <div class="col-4">
+                        <img src="./images/icon_dmail.png" alt="yj" class="footer-img">
+                        <h5 class="text-white font-weight-light">邮件</h5>
+                    </div>
+                    <div class="col-4">
+                        <img src="./images/icon_patriarch.png" alt="kf" class="footer-img">
+                        <h5 class="text-white font-weight-light">联系方式</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <hr style="text-align: center;border: white solid thin;width: 100%">
+                <div class="col-12 text-center text-white">
+                    版权所有 &copy; 王鹏辉
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script type="text/javascript">
+        //创建和初始化地图函数：
+        function initMap() {
+            createMap();//创建地图
+            setMapEvent();//设置地图事件
+            addMapControl();//向地图添加控件
+        }
+
+        //创建地图函数：
+        function createMap() {
+            var map = new BMap.Map("dituContent");//在百度地图容器中创建一个地图
+            var point = new BMap.Point(119.176895, 26.072713);//定义一个中心点坐标
+            map.centerAndZoom(point, 17);//设定地图的中心点和坐标并将地图显示在地图容器中
+            window.map = map;//将map变量存储在全局
+        }
+
+        //地图事件设置函数：
+        function setMapEvent() {
+            map.enableDragging();//启用地图拖拽事件，默认启用(可不写)
+            map.enableScrollWheelZoom();//启用地图滚轮放大缩小
+            map.enableDoubleClickZoom();//启用鼠标双击放大，默认启用(可不写)
+            map.enableKeyboard();//启用键盘上下左右键移动地图
+        }
+
+        //地图控件添加函数：
+        function addMapControl() {
+            //向地图中添加缩放控件
+            var ctrl_nav = new BMap.NavigationControl({ anchor: BMAP_ANCHOR_TOP_LEFT, type: BMAP_NAVIGATION_CONTROL_LARGE });
+            map.addControl(ctrl_nav);
+            //向地图中添加缩略图控件
+            var ctrl_ove = new BMap.OverviewMapControl({ anchor: BMAP_ANCHOR_BOTTOM_RIGHT, isOpen: 1 });
+            map.addControl(ctrl_ove);
+            //向地图中添加比例尺控件
+            var ctrl_sca = new BMap.ScaleControl({ anchor: BMAP_ANCHOR_BOTTOM_LEFT });
+            map.addControl(ctrl_sca);
+        }
+        initMap();//创建和初始化地图
+    </script>
+</body>
+
+</html>
