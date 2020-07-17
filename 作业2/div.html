@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>divtest</title>
+    <style>
+        #right {
+            display: inline-block;
+            width: 65%;
+        }
+        #left {
+            display: inline-block;
+            width: 30%;
+            background-color: white;
+            vertical-align: top;
+        }
+        #div_bottom{
+            text-align: center;
+            background-color: yellowgreen;
+        }
+        #div_top{
+            text-align: center;
+            background-color: yellowgreen;
+        }
+        body{
+            background-color: white;
+            margin: 0px;
+        }
+        h2{
+            color: #000;
+            margin-top: 20px;margin-bottom: 20px;
+        }
+        p{
+            color: #000;
+        }
+        
+        #weixiao{
+            width: 54px;
+            vertical-align:middle; 
+        }
+        .font{
+            font-family: "黑体";
+            color: black;
+            font-size: 25px;
+            vertical-align:middle;      
+    </style>
+</head>
+<body>
+    <div id="div_top">
+        <img src="img/nan.png" alt="" id="weixiao" style="width: 34px;">
+        <span class="font" style="color: white;">喝杯咖啡吗？</span>
+    </div>
+    <div>
+        <div id="left" >
+            <ul>
+                <li><a href="#natie">拿铁</a></li>
+                <li><a href="#kabuqinuo">卡布奇诺</a></li>
+                <li>奥瑞白</li>
+                <li>美式咖啡</li>
+                <li>焦糖玛奇朵</li>
+            </ul>
+        </div>
+        <div id="right">
+            <div><img src="img/kafei.jpg" alt=""></div>
+            
+            <h2 id="natie">拿铁</h2>
+            <p style="text-indent: 2em;">    其实，拿铁（Latte）在意大利语里是“牛奶”的意思，如果你点一杯“拿铁”，那么服务生只会给你上一杯牛奶。而意大利语的Caffè Latte指的才是拿铁。现在很多冷饮店都会推出自己的“拿铁”系列，像“红茶拿铁”“抹茶拿铁”等等，其实就是奶茶而并没有咖啡的成分。</p>
+             
+        </div>
+    </div>
+    <div id="div_bottom">
+        <span style="color: white;">版权所有@<a href="#">songwei</a></span> 
+    </div>
+</body>
+</html>
