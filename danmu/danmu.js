@@ -4,7 +4,7 @@
         add:function(val,container){
             var odiv = $("<div class='bullet'></div>");
             odiv.html(val);
-            var size =  (Math.floor(Math.random() * 10) + 20)+ "px";
+            var size =  (Math.floor(Math.random() * 11) + 20)+ "px";
             odiv.css({
                 position:'absolute',
                 fontSize:size,
@@ -28,7 +28,7 @@
         },
         move:function(odiv,container){
             var i = 0;
-            var speed =  (Math.floor(Math.abs((Math.random())*10)))
+            var speed =  (Math.floor(Math.abs((Math.random())*11)))
             var timer = setInterval(function() {
                 odiv.css({
                     right: (i += speed) + "px"
